@@ -27,6 +27,7 @@
               "src/assets"
             ],
             "styles": [
+              "/Users/dmitry/Desktop/HTML/new-organizer/node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
             "scripts": []
