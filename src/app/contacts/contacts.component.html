@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-5">
+    <app-contact-list (outClickedContact)="selectedContact($event)"></app-contact-list>
+  </div>
+  <div class="col-7">
+    <app-contact-detail [detailContact]="detailContact" *ngIf="detailContact.name != ''; else noContact"></app-contact-detail>
+    <ng-template #noContact>
+      <h1 style="text-align: center; color: coral">No Selected Contact</h1>
+    </ng-template>
+  </div>
+</div>

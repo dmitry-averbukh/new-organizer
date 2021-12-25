@@ -8,8 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'new-organizer';
   activeSession = 'contacts'
-
-
   onNavigate(section: string) {
     this.activeSession=section;
   }

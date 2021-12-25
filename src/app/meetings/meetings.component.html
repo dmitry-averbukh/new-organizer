@@ -1,0 +1,14 @@
+<div class="row" style="text-align: center">
+  <div class="col-10">
+    <app-meetings-edit></app-meetings-edit>
+    <hr>
+    <ul class="list-group">
+      <li *ngFor="let meeting of meetings" class="list-group-item" style="background-color: lavender">
+        <div>
+          <h6>{{meeting.date}}</h6>
+          <h6>With: {{meeting.contactName}}</h6>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

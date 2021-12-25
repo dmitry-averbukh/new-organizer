@@ -8,5 +8,4 @@ export class Contact {
     this.description=description;
     this.imgPath=imgPath;
   }
-
 }

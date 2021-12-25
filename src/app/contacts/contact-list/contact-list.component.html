@@ -1,0 +1,12 @@
+<div class="row"style="text-align: center">
+  <div class="col-12">
+    <button class="btn btn-primary">Add Contact</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-12" style="text-align: center">
+    <app-contact-item *ngFor="let contact of contacts" [contact]="contact"
+                      (clickedContact)="clickedContact($event)"></app-contact-item>
+  </div>
+</div>
