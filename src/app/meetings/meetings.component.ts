@@ -21,4 +21,7 @@ export class MeetingsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  newMeeting(newMeeting: Meeting) {
+    this.meetings.push(newMeeting);
+  }
 }

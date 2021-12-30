@@ -1,21 +1,21 @@
 <div class="row">
-  <div class="col-12" style="text-align: center">
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-default" style="color: #bd89e7">NAME</span>
+  <div class="col-12">
+    <form>
+      <div class="row">
+        <div class="col-12 form-group">
+          <label for="date"></label>
+          <input type="datetime-local" name="date" id="date" class="form-control" #dateInput>
+          <label for="name"></label>
+          <input type="text" name="with" id="name" class="form-control" #nameInput>
+        </div>
       </div>
-      <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-    </div>
-
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-default" style="color: #bd89e7">DATE (dd/mm/yy)</span>
+      <br>
+      <div class="row">
+        <div class="col-12 btn-group" role="group">
+          <button class="btn btn-success" type="button" (click)="onNewCMeetingSub()">Create</button>
+          <button class="btn btn-danger" type="button" (click)="onDeleteClick()">Delete</button>
+        </div>
       </div>
-      <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-    </div>
-    <div class="btn-group" role="group" style="text-align: center">
-      <button type="button" class="btn btn-primary">SAVE</button>
-      <button type="button" class="btn btn-danger">CLEAR</button>
-    </div>
+    </form>
   </div>
 </div>
